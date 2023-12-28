@@ -565,7 +565,8 @@ function createAvatar() {
         rownum = -1
     }
     for (let i = 0; i < 3; i ++) {
-        if (holderChildren[i].children.length === 0 || holderChildren[i].children[0].src[31] === 'P') {
+        if (holderChildren[i].children.length === 0 || holderChildren[i].children[0].src.at(-5) === 'P' ||
+            holderChildren[i].children[0].src.at(-5) === 'A') {
             return;
         }
     }
@@ -639,7 +640,7 @@ document.addEventListener('mousedown', function() {
             if (activePiece.color !== activeGame.turn) {
                 return;
             }
-            showHolderOptions(elements[0].src[31])
+            showHolderOptions(elements[0].src.at(-5))
         } else {
             showMoves(elements[0].src, elements[1])
         }
