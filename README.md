@@ -1,4 +1,4 @@
-#Hindi Chess Game
+# Hindi Chess Game
 
 Static website made with JS/HTML/CSS
 
