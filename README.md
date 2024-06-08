@@ -1,3 +1,5 @@
-Hindi Chess Game
+#Hindi Chess Game
 
-Custom chess game
+Static website made with JS/HTML/CSS
+
+You can check it out [Here](chess-project-psi.vercel.app)
